@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-images: {
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
+  },
+  images: {
     remotePatterns: [
       {
         protocol: "https",
