@@ -6,7 +6,8 @@ import { Title } from "@/components/Title";
 
 export default async function Page() {
   const posts = await sanityFetch({
-    query: POSTS_QUERY
+    query: POSTS_QUERY,
+    tags: ["post", "author", "category"]
     // revalidate: 3600
   });
 
