@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export function Header() {
   return (
@@ -23,6 +23,8 @@ export function Header() {
             <Link
               className="hover:text-pink-500 transition-colors"
               href="/studio"
+              target="_blank"
+              rel="noreferrer"
             >
               Sanity Studio
             </Link>
@@ -30,5 +32,5 @@ export function Header() {
         </ul>
       </header>
     </div>
-  )
+  );
 }
