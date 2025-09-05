@@ -3,10 +3,11 @@
  * and query draft content and preview the content as it will appear once everything is published
  */
 
-import { defineEnableDraftMode } from "next-sanity/draft-mode";
 import { client } from "@/sanity/lib/client";
-import { token } from "@/sanity/lib/token";
+import { defineEnableDraftMode } from "next-sanity/draft-mode";
+// import { token } from "@/sanity/lib/token";
 
 export const { GET } = defineEnableDraftMode({
-  client: client.withConfig({ token })
+  // client: client.withConfig({ token })
+  client: client.withConfig({ token: process.env.SANITY_API_READ_TOKEN })
 });
