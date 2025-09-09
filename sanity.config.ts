@@ -31,6 +31,15 @@ export default defineConfig({
           enable: "/api/draft-mode/enabled"
         }
       }
+
+      //
+      // previewUrl: {
+      //   origin: process.env.SANITY_STUDIO_PREVIEW_ORIGIN,
+      //   preview: "/",
+      //   previewMode: {
+      //     enable: "/api/draft-mode/enable"
+      //   }
+      // }
     }),
     structureTool({ structure }),
     // Vision is for querying with GROQ from inside the Studio
