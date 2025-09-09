@@ -10,12 +10,14 @@ export default async function FrontendLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const { isEnabled } = await draftMode();
+
   return (
     <section className="bg-white min-h-screen">
       <Header />
       {children}
       <SanityLive />
-      {(await draftMode()).isEnabled && (
+      {isEnabled && (
         <>
           <VisualEditing />
           <DisableDraftMode />

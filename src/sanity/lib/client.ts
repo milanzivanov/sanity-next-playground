@@ -15,6 +15,7 @@ export const client = createClient({
   stega: {
     // enabled: true,
     studioUrl: "/studio"
+    // logger: console
   }
   // stega: {
   //   enabled: process.env.NODE_ENV === "development",
